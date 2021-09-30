@@ -4,7 +4,8 @@ from datetime import datetime
 
 app = Flask(__name__)
 # 'postgresql://<usuario>:<contraseña>@<direccion de la db>:<puerto>/<nombre de la db>
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost:5432/prueba2'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost:5432/prueba2'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://lqditflmvevwsw:6a39b9f645f4b512e12e7e42221186c2eedd3b255ce4d6482cfd7c8ed9a27320@ec2-54-83-137-206.compute-1.amazonaws.com:5432/d1890fir2j27oe'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'some-secret-key'
 
